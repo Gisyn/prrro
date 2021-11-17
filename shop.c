@@ -2,7 +2,7 @@
 #include <string.h>
 #pragma warning(disable:4996)
 int main(){
-	printf("ÎŞÈËÉÌµê");
+	printf("æ— äººå•†åº—");
 	int n;
 	int o = 0;
 	struct store
@@ -34,31 +34,31 @@ int main(){
 		int dds;
 	}; struct zsj zong[12] = { 0 };
 	while (1){
-		printf("µÇÂ¼Çë°´1,×¢²áÇë°´0,¹ÜÀíÇë°´5\n");
+		printf("ç™»å½•è¯·æŒ‰1,æ³¨å†Œè¯·æŒ‰0,ç®¡ç†è¯·æŒ‰5\n");
 		scanf("%d", &n);
 		if (n == 0){
 			int l = 1;
 			while (l){
-				printf("ÓÃ»§Ãû;");
+				printf("ç”¨æˆ·å;");
 				scanf("%s", r.user);
 				int j = 101; int o1 = 0;
 				while (j--){
 					int k = strcmp(r.user, a[o1].user);
 					o1++;
 					if (!k){
-						printf("ÓÃ»§ÃûÒÑ´æÔÚ"); break;
+						printf("ç”¨æˆ·åå·²å­˜åœ¨"); break;
 					}
 					else{
 						l = 0; break;
 					}
 				}
 			}
-			printf("ÃÜÂë:");
+			printf("å¯†ç :");
 			scanf("%s", &r.password);
 			int b = 1; 
 			while (b){
 				int o2 = 0;
-				printf("ÇëÔÙ´ÎÊäÈëÃÜÂë;");
+				printf("è¯·å†æ¬¡è¾“å…¥å¯†ç ;");
 				scanf("%s", &t.password);
 				int c = strcmp(r.password, t.password);
 				b = c;
@@ -69,9 +69,9 @@ int main(){
 						a[s].user[b10] = r.user[b10]; a[s].password[b10] = r.password[b10]; b10++;
 					}
 					s++;
-					printf("×¢²á³É¹¦\n");
+					printf("æ³¨å†ŒæˆåŠŸ\n");
 				}
-				else{ printf("ÃÜÂë²»Ò»ÖÂ\n"); o2++; }
+				else{ printf("å¯†ç ä¸ä¸€è‡´\n"); o2++; }
 			}
 		}
 
@@ -80,9 +80,9 @@ int main(){
 			while (h){
 				o = 0;
 				struct store q = { 0 };
-				printf("ÓÃ»§Ãû;");
+				printf("ç”¨æˆ·å;");
 				scanf("%s", &q.user);
-				printf("ÃÜÂë:");
+				printf("å¯†ç :");
 				scanf("%s", &q.password);
 				int d = 101;
 				int z = 1;
@@ -99,12 +99,12 @@ int main(){
 					o++;
 					int a12 = o - 1;
 					if (f == 0 && g == 0){
-						z = 0; printf("µÇÂ½³É¹¦\n");
+						z = 0; printf("ç™»é™†æˆåŠŸ\n");
 						h = 0;
 						int s1 = 0;
 						float s3 = 0;
 						while (1){
-							printf("1.ÉÌÆ·½çÃæ 2.ĞŞ¸ÄÃÜÂë 3×¢ÏúÕË»§ 4.Óà¶î 5ÍË³öµÇÂ¼\n");
+							printf("1.å•†å“ç•Œé¢ 2.ä¿®æ”¹å¯†ç  3æ³¨é”€è´¦æˆ· 4.ä½™é¢ 5é€€å‡ºç™»å½•\n");
 							int a9;
 							scanf("%d", &a9);
 							if (a9 == 1){
@@ -113,18 +113,18 @@ int main(){
 									int d6 = 0;
 									while (d5--){
 										int e5 = goo[d6].num;
-										if (e5){ printf("±àºÅ:%d ÉÌÆ·:%s ¼Û¸ñ:%.2f ¿â´æ:%d\n", goo[d6].num, goo[d6].name, goo[d6].price, goo[d6].quantity); }
+										if (e5){ printf("ç¼–å·:%d å•†å“:%s ä»·æ ¼:%.2f åº“å­˜:%d\n", goo[d6].num, goo[d6].name, goo[d6].price, goo[d6].quantity); }
 										d6++;
 									}
-									printf("1.¹ºÂò 2.½áÊø ");
+									printf("1.è´­ä¹° 2.ç»“æŸ ");
 									int d9;
 									scanf("%d", &d9);
 									if (d9 == 1){
-										printf("ÊäÈëÒª¹ºÂòµÄÉÌÆ·±àºÅ");
+										printf("è¾“å…¥è¦è´­ä¹°çš„å•†å“ç¼–å·");
 										int d7;
 										scanf("%d", &d7);
 										list[s1].num = d7;
-										printf("ÊäÈë¹ºÂòµÄÊıÁ¿");
+										printf("è¾“å…¥è´­ä¹°çš„æ•°é‡");
 										int d8;
 										scanf("%d", &d8);
 										d7--;
@@ -138,20 +138,20 @@ int main(){
 									}
 									else{
 										int fq = s1;
-										printf("¹ºÎïÇåµ¥\n±àºÅ  Ãû³Æ  µ¥¼Û  ÊıÁ¿  ĞèÖ§¸¶\n");
+										printf("è´­ç‰©æ¸…å•\nç¼–å·  åç§°  å•ä»·  æ•°é‡  éœ€æ”¯ä»˜\n");
 										while (s1--){
 											int s2 = list[s1].name; printf("%d    %s   %2.f    %d    %2.f\n", list[s1].num, goo[s2].name, goo[s2].price, list[s1].many, list[s1].much);
 											s3 += list[s1].much;
 											break;
 										}
-										printf("¹²ĞèÖ§¸¶%2.f\n", s3);
+										printf("å…±éœ€æ”¯ä»˜%2.f\n", s3);
 										int zf;
 										float ye = 0;
-										printf("1ÊÖ»úÖ§¸¶,2Óà¶îÖ§¸¶,3·ÅÆúÖ§¸¶");
-										scanf("%d", &zf); if (zf == 1){ printf("Ö§¸¶³É¹¦"); zong[yue].dds += 1; }
+										printf("1æ‰‹æœºæ”¯ä»˜,2ä½™é¢æ”¯ä»˜,3æ”¾å¼ƒæ”¯ä»˜");
+										scanf("%d", &zf); if (zf == 1){ printf("æ”¯ä»˜æˆåŠŸ"); zong[yue].dds += 1; }
 										if (zf == 2){
-											if (a[a12].ye < s3){ printf("Óà¶î²»×ã"); }
-											else{ printf("Ö§¸¶³É¹¦"); a[12].ye -= s3; zong[yue].dds += 1; }
+											if (a[a12].ye < s3){ printf("ä½™é¢ä¸è¶³"); }
+											else{ printf("æ”¯ä»˜æˆåŠŸ"); a[12].ye -= s3; zong[yue].dds += 1; }
 										}
 										if (zf == 3){ while (fq--){ int fq1 = 0; int fq2 = list[fq1].num - 1; goo[fq2].quantity += list[fq1].many; goo[fq2].sale -= list[fq1].many; zong[yue].yye -= list[fq1].much; } }
 										break;
@@ -159,30 +159,30 @@ int main(){
 									break;
 								}
 							}if (a9 == 2){
-								printf("ÇëÊäÈëÃÜÂë"); char a10[100]; scanf("%s", &a10); int a11 = strcmp(a10, a[a12].password); if (a11){ printf("ÃÜÂë´íÎó\n"); }
+								printf("è¯·è¾“å…¥å¯†ç "); char a10[100]; scanf("%s", &a10); int a11 = strcmp(a10, a[a12].password); if (a11){ printf("å¯†ç é”™è¯¯\n"); }
 								else{
-									printf("ÇëÊäÈëĞÂÃÜÂë"); char a13[100] = { 0 }; scanf("%s", &a13); int a14 = 0; int a15 = 100; while (--a15){ a[a12].password[a14] = a13[a14]; a14++; }
+									printf("è¯·è¾“å…¥æ–°å¯†ç "); char a13[100] = { 0 }; scanf("%s", &a13); int a14 = 0; int a15 = 100; while (--a15){ a[a12].password[a14] = a13[a14]; a14++; }
 								}
 							}int a16=0; if (a9 == 3){
-								if (a[a12].ye){ printf("ÓÃ»§Óà¶î%2.f,ÊÇ·ñÏû·Ñ»òÌáÏÖ\n1.ÊÇ 2.·ñ", a[a12].ye); scanf("%d", &a16); }if (a16 == 2||a16==0){ printf("ÊÇ·ñÈ·¶¨×¢ÏúÓÃ»§\n2.ÊÇ 3.·ñ");  scanf("%d", &a16); } if (a16 == 2){ int a18 = 100; int a19 = 0; while (--a18){ a[a12].user[a19] = 0; a[a12].password[a19] = 0; }break; }
-							}if (a9 == 4){ printf("Óà¶î:%2.f 1.³äÖµ 2.ÌáÏÖ 3.·µ»Ø", a[a12].ye); int a20; scanf("%d", &a20); if (a20 == 1){ printf("ÇëÊäÈë³äÖµ½ğ¶î"); float a21; scanf("%f", &a21); a[a12].ye += a21; }if (a20 == 2){ printf("ÇëÊäÈëÌáÏÖ½ğ¶î"); float a22; scanf("%f", &a22); if (a[a12].ye < a22){ printf("Óà¶î²»×ã"); } else{ a[a12].ye += a22; } } }
+								if (a[a12].ye){ printf("ç”¨æˆ·ä½™é¢%2.f,æ˜¯å¦æ¶ˆè´¹æˆ–æç°\n1.æ˜¯ 2.å¦", a[a12].ye); scanf("%d", &a16); }if (a16 == 2||a16==0){ printf("æ˜¯å¦ç¡®å®šæ³¨é”€ç”¨æˆ·\n2.æ˜¯ 3.å¦");  scanf("%d", &a16); } if (a16 == 2){ int a18 = 100; int a19 = 0; while (--a18){ a[a12].user[a19] = 0; a[a12].password[a19] = 0; }break; }
+							}if (a9 == 4){ printf("ä½™é¢:%2.f 1.å……å€¼ 2.æç° 3.è¿”å›", a[a12].ye); int a20; scanf("%d", &a20); if (a20 == 1){ printf("è¯·è¾“å…¥å……å€¼é‡‘é¢"); float a21; scanf("%f", &a21); a[a12].ye += a21; }if (a20 == 2){ printf("è¯·è¾“å…¥æç°é‡‘é¢"); float a22; scanf("%f", &a22); if (a[a12].ye < a22){ printf("ä½™é¢ä¸è¶³"); } else{ a[a12].ye += a22; } } }
 
 							if (a9 == 5){ break; }
 						}
 					}
-				}if (z){ printf("ÓÃ»§Ãû»òÃÜÂë´íÎó\n"); break; }
+				}if (z){ printf("ç”¨æˆ·åæˆ–å¯†ç é”™è¯¯\n"); break; }
 				
 			}
 		}
 			if (n == 5){
-				printf("ÇëÊäÈëÕËºÅ\n");
+				printf("è¯·è¾“å…¥è´¦å·\n");
 				scanf("%s", &m2.user);
-				printf("ÇëÊäÈëÃÜÂë\n");
+				printf("è¯·è¾“å…¥å¯†ç \n");
 				scanf("%s", &m2.password);
 				int u1 = strcmp(m2.user, manage.user);
 				int p1 = strcmp(m2.password, manage.password);
 				if (u1 == 0 && p1 == 0){
-					printf("µÇÂ½³É¹¦\n");
+					printf("ç™»é™†æˆåŠŸ\n");
 					while (1){
 						int i1[100], j1, i2,i4=0;
 						for (i2=0; i2 < 100; i2++){ i1[i2] = i2; }//i1[100]={0,1,2,3,...,98,99}
@@ -200,61 +200,61 @@ int main(){
 						int d2 = 99;
 						while (d1--){
 						 int d3 = i1[d2]; int i3 = goo[d3].num;
-							if (i3){ printf("±àºÅ:%d ÉÌÆ·:%s ¼Û¸ñ:%.2f ¿â´æ:%d ÏúÁ¿:%d\n", goo[d3].num, goo[d3].name, goo[d3].price, goo[d3].quantity, goo[d3].sale); }
+							if (i3){ printf("ç¼–å·:%d å•†å“:%s ä»·æ ¼:%.2f åº“å­˜:%d é”€é‡:%d\n", goo[d3].num, goo[d3].name, goo[d3].price, goo[d3].quantity, goo[d3].sale); }
 							d2--;
 						}
-						printf("1.Ôö¼ÓÉÌÆ· 2.É¾³ıÉÌÆ· 3.¸ü¸Ä¼Û¸ñ 4.¸ü¸Ä¿â´æ 5.±¨±í 6.É¾³ıÓÃ»§ 7.ÍË³ö");
+						printf("1.å¢åŠ å•†å“ 2.åˆ é™¤å•†å“ 3.æ›´æ”¹ä»·æ ¼ 4.æ›´æ”¹åº“å­˜ 5.æŠ¥è¡¨ 6.åˆ é™¤ç”¨æˆ· 7.é€€å‡º");
 						scanf("%d", &c2);
 						if (c2 == 1){
 							goo[c3].num = ++nu;
-							printf("ÊäÈëÉÌÆ·Ãû³Æ");
+							printf("è¾“å…¥å•†å“åç§°");
 							scanf("%s", &goo[c3].name);
-							printf("ÊäÈëÉÌÆ·¼Û¸ñ");
+							printf("è¾“å…¥å•†å“ä»·æ ¼");
 							scanf("%f", &goo[c3].price);
-							printf("ÊäÈë¿â´æ");
+							printf("è¾“å…¥åº“å­˜");
 							scanf("%d", &goo[c3].quantity);
-							printf("ÊäÈëÏúÁ¿");
+							printf("è¾“å…¥é”€é‡");
 							scanf("%d", &goo[c3].sale);
 							c3++;
 						};
 						if (c2 == 2){
 							int c4;
-							printf("ÊäÈëÒªÉ¾³ıµÄÉÌÆ·±àºÅ");
+							printf("è¾“å…¥è¦åˆ é™¤çš„å•†å“ç¼–å·");
 							scanf("%d", &c4);
 							c4 -= 1;
 							goo[c4].num = 0;
 						};
 						if (c2 == 3){
-							printf("ÊäÈëÒª¸ü¸Ä¼Û¸ñµÄÉÌÆ·±àºÅ");
+							printf("è¾“å…¥è¦æ›´æ”¹ä»·æ ¼çš„å•†å“ç¼–å·");
 							int c5;
 							scanf("%d", &c5);
 							c5 -= 1;
-							printf("¸ÃÉÌÆ·ÏÖÔÚµÄ¼Û¸ñÊÇ%.2f,ÊäÈë¸ü¸ÄµÄ¼Û¸ñ", goo[c5].price);
+							printf("è¯¥å•†å“ç°åœ¨çš„ä»·æ ¼æ˜¯%.2f,è¾“å…¥æ›´æ”¹çš„ä»·æ ¼", goo[c5].price);
 							scanf("%f", &goo[c5].price);
 						};
 						if (c2 == 4){
-							printf("ÇëÊäÈëÒª¸ü¸Ä¿â´æµÄÉÌÆ·±àºÅ");
+							printf("è¯·è¾“å…¥è¦æ›´æ”¹åº“å­˜çš„å•†å“ç¼–å·");
 							int c6;
 							scanf("%d", &c6);
 							c6 -= 1;
-							printf("¸ÃÉÌÆ·ÏÖÔÚ¿â´æÊÇ%d,ÊäÈë¸ü¸ÄµÄ¿â´æ");
+							printf("è¯¥å•†å“ç°åœ¨åº“å­˜æ˜¯%d,è¾“å…¥æ›´æ”¹çš„åº“å­˜");
 							scanf("%d", &goo[c6].quantity);
 						}
 						if (c2 == 5){
-							int bb; printf("±¾ÔÂ¶©µ¥%d,±¾ÔÂÓªÒµ¶î%2.f\n1.±¾ÔÂ½áµ¥ 2²é¿´ÉÏÔÂ 3·µ»Ø", zong[yue].dds, zong[yue].yye);
-							scanf("%d", &bb); if (bb == 1){ yue++; }if (bb == 2){ printf("ÉÏ¸öÔÂ¶©µ¥%d,ÉÏ¸öÔÂÓªÒµ¶î%d\n", zong[yue - 1].dds, zong[yue - 1].yye); }if (bb == 3){ continue; }
+							int bb; printf("æœ¬æœˆè®¢å•%d,æœ¬æœˆè¥ä¸šé¢%2.f\n1.æœ¬æœˆç»“å• 2æŸ¥çœ‹ä¸Šæœˆ 3è¿”å›", zong[yue].dds, zong[yue].yye);
+							scanf("%d", &bb); if (bb == 1){ yue++; }if (bb == 2){ printf("ä¸Šä¸ªæœˆè®¢å•%d,ä¸Šä¸ªæœˆè¥ä¸šé¢%d\n", zong[yue - 1].dds, zong[yue - 1].yye); }if (bb == 3){ continue; }
 						}
-						if (c2 == 6){ printf("ÊäÈëÒªÉ¾³ıµÄÓÃ»§Ãû"); scanf("%s", &rr.user);
+						if (c2 == 6){ printf("è¾“å…¥è¦åˆ é™¤çš„ç”¨æˆ·å"); scanf("%s", &rr.user);
 						int rr1 = 100, rr2; while (rr1--){ int rr3 = strcmp(rr.user, a[rr1].user); if (!rr1){
-							if (a[rr1].ye){ printf("ÓÃ»§Óà¶î%2.f", a[rr1].ye); }
-							else{ printf("ÊÇ·ñÈ·¶¨É¾³ı¸ÃÓÃ»§\n1.ÊÇ 2.·ñ");  scanf("%d", &rr2);  if (rr2 == 1){ int rr3 = 100; int rr4 = 0; while (--rr3){ a[rr1].user[rr4] = 0; a[rr1].password[rr4] = 0; } }}
+							if (a[rr1].ye){ printf("ç”¨æˆ·ä½™é¢%2.f", a[rr1].ye); }
+							else{ printf("æ˜¯å¦ç¡®å®šåˆ é™¤è¯¥ç”¨æˆ·\n1.æ˜¯ 2.å¦");  scanf("%d", &rr2);  if (rr2 == 1){ int rr3 = 100; int rr4 = 0; while (--rr3){ a[rr1].user[rr4] = 0; a[rr1].password[rr4] = 0; } }}
 						}
 						}
 						}
 						if (c2 == 7){  break; }
 					}
 				}
-				else{ printf("ÕËºÅ»òÃÜÂë´íÎó\n"); }
+				else{ printf("è´¦å·æˆ–å¯†ç é”™è¯¯\n"); }
 			}
 		}
 	}
